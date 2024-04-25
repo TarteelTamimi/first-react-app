@@ -2,6 +2,16 @@ import "./style.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser, faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 
+function Actions() {
+
+  return (
+    <div className="actions">
+      <button className="cancel-btn">Cancel</button>
+      <button className="save-btn">SAVE</button>
+    </div>
+  )
+}
+
 function MemberList({ members }) {
   const rows = [];
 
@@ -59,10 +69,7 @@ export default function App() {
       <div className="container">
         <SearchBar />
         <MemberList members={MEMBERS} />
-        <div className="actions">
-          <button className="cancel-btn">Cancel</button>
-          <button className="save-btn">SAVE</button>
-        </div>
+        <Actions />
       </div>
     </>
   )
