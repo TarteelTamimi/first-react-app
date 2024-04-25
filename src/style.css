@@ -1,0 +1,111 @@
+* {
+    font-family: sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    padding: 30px;
+}
+
+.header {
+    margin: 10px;
+    font-size: 1em;
+}
+
+.container {
+    padding: 20px;
+    width: 450px;
+    margin-left: 50px;
+}
+
+.search-form {
+    display: flex;
+    border-bottom: 1px solid rgb(186, 186, 186);
+    margin: 10px;
+    padding-bottom: 10px;
+}
+
+.search-form input {
+    border: none;
+    outline: none;
+    font-size: 1em;
+    padding-left: 15px;
+}
+
+.search-form input::placeholder {
+    color: rgb(186, 186, 186);
+}
+
+.search-icon {
+    color: rgb(186, 186, 186);
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 2px;
+}
+
+.name {
+    display: flex;
+    gap: 10px;
+}
+
+.rows {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 30px;
+}
+
+input[type="checkbox"] {
+    appearance: none;
+    width: 20px;
+    height: 20px; 
+    border: 1px solid rgb(186, 186, 186);
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+}
+
+input[type="checkbox"]:checked {
+    border: 3px solid #62B01E; 
+    background-image: url(https://th.bing.com/th/id/OIF.hkfFgbOpjVYo7zNwXkLv9Q?rs=1&pid=ImgDetMain);
+    background-size: 88%; 
+    background-position: center center;
+}
+
+.cancel-btn {
+    border: 2px solid rgb(186, 186, 186);
+    color: rgb(186, 186, 186);
+    background-color: white;
+    outline: none;
+    border-radius: 3px;
+    padding: 5px 30px;
+    font-size: 1.3em;
+    cursor: pointer;
+}
+
+.save-btn {
+    border: 1px solid rgb(186, 186, 186);
+    color: white;
+    background: linear-gradient(280deg, rgba(67,43,102,1) 0%, rgba(91,91,172,1) 26%, rgba(65,120,215,1) 100%);
+    outline: none;
+    border-radius: 3px;
+    padding: 5px 30px;
+    font-size: 1.3em;
+    cursor: pointer;
+    border: none;
+}
+
+.actions {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 25px;
+}
+
