@@ -1,56 +1,7 @@
 import "./style.css";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faUser, faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
-
-function Actions() {
-
-  return (
-    <div className="actions">
-      <button className="cancel-btn">Cancel</button>
-      <button className="save-btn">SAVE</button>
-    </div>
-  )
-}
-
-function MemberList({ members }) {
-  const rows = [];
-
-  members.forEach((member) => {
-    rows.push(
-      <MemberRow member={member} />
-    );
-  })
-
-  return (
-    <div className="rows">
-      {rows}
-    </div>
-  );
-}
-
-function MemberRow({ member }) {
-  const name = member.name;
-
-  return (
-    <div className="row">
-      <div className="name">
-        <FontAwesomeIcon icon={faUser} />
-        {name}
-      </div>
-      <input type="checkbox" className="checkbox" />
-    </div>
-  );
-}
-
-function SearchBar() {
-
-  return (
-    <form className="search-form">
-      <FontAwesomeIcon icon={faMagnifyingGlass} className="search-icon" />
-      <input type="text" id="member" placeholder="Find members" />
-    </form>
-  )
-}
+import SearchBar from './components/SearchBar'
+import MemberList from './components/MemberList'
+import Actions from './components/Actions'
 
 const MEMBERS = [
   { name: "Carooien Bloeme", present: "false" },
